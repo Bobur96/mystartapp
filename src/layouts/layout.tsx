@@ -3,6 +3,7 @@ import { FunctionComponent, useState } from 'react';
 import { LayoutProps } from "./layout.props";
 import Header from "./header/header";
 import Sidebar from "./sidebar/sidebar";
+import Footer from "./footer/footer";
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
@@ -12,7 +13,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
       <Box mt={'11vh'} pl={{base: 0, lg: '320px'}} minH={'90vh'} transition={'all .4s ease'}>
         <Container maxW={'container.lg'}>{children}</Container>
       </Box>
-      <h1>footer</h1>
+      <Footer/>
     </Box>
   );
 };
