@@ -14,6 +14,7 @@ const Footer = () => {
 			borderTopColor={useColorModeValue('gray.200', 'gray.700')}
 			h={'10vh'}
 		>
+			
 			<Flex justify={'space-between'} align={'center'} h={'full'}>
 				<Text>© {format(new Date(), 'yyyy')} Sammi. All Right Reserved.</Text>
 				<Flex gap={3} mr={10}>
