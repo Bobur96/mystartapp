@@ -1,13 +1,13 @@
 import { Box, Button, Container, HStack, Icon, Text, useColorModeValue } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 import { navigation } from 'src/config/constants';
 import { SidebarProps } from './sidebar.props';
-import { useTranslation } from 'react-i18next';
 
 const Sidebar = ({ toggle }: SidebarProps): JSX.Element => {
 	const router = useRouter();
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	return (
 		<Box

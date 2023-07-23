@@ -1,9 +1,9 @@
 import { Box, Flex, Grid, GridItem, Heading, HStack, Icon, Image, Stack, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { FaUserGraduate } from 'react-icons/fa';
 import SectionTitle from '../section-title/section-title';
-import Link from 'next/link';
 
 const Instructors = () => {
 	const { t } = useTranslation();

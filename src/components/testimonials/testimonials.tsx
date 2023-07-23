@@ -16,7 +16,7 @@ const Testimonials = () => {
 				subtitle={t('testimonials_description', { ns: 'home' })}
 			/>
 
-			{/* <Carousel responsive={testimonialsCarousel} arrows={true} showDots={false} infinite> */}
+			<Carousel responsive={testimonialsCarousel} arrows={true} showDots={false} infinite>
 				{data.map((item, idx) => (
 					<Center key={idx} flexDirection={'column'} maxW={'container.sm'} mx={'auto'}>
 						<Icon as={ImQuotesRight} fontSize={100} />
@@ -28,7 +28,7 @@ const Testimonials = () => {
 						</Text>
 					</Center>
 				))}
-			{/* </Carousel> */}
+			</Carousel>
 		</>
 	);
 };

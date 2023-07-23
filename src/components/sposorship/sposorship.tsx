@@ -11,11 +11,11 @@ const Sposorship = () => {
 	return (
 		<>
 			<SectionTitle title='' subtitle={t('sponsor_title', { ns: 'home' })} textAlign={'center'} mb={5} />
-			{/* <Carousel responsive={sponsorshipCarousel} arrows={false} showDots={false} infinite autoPlay={true} autoPlaySpeed={1000}> */}
+			<Carousel responsive={sponsorshipCarousel} arrows={false} showDots={false} infinite autoPlay={true} autoPlaySpeed={1000}>
 				{trustedCompeny.map((item, idx) => (
 					<Icon key={idx} as={item} fontSize={50} />
 				))}
-			{/* </Carousel> */}
+			</Carousel>
 		</>
 	);
 };
